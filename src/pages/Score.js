@@ -6,7 +6,7 @@ const Score = () => {
   const score = localStorage.getItem('score')
   const name = localStorage.getItem('name');
   return (
-    <div className='bg-white p-10 text-center text-black w-[400px] flex flex-col justify-center items-center gap-7'>
+    <div className='bg-white m-3 p-10 text-center text-black w-[400px] flex flex-col justify-center items-center gap-7'>
     <div className='text-2xl'>Hey! {name} 👋🏻</div>
     <div className='font-bold text-2xl'>Successfully Completed Quiz</div>
     <FaCheckCircle size={100} />
