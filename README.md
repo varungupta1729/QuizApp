@@ -62,7 +62,7 @@ You need to have Node.js and npm installed. You can download them from [here](ht
 - If you refresh the page, the quiz will remember which question you were on and resume from there.
 - Your progress and the timer state are saved in the browser's local storage.
 
-###Copy Restriction 
+### Copy Restriction 
 
 - Student cant copy the text ensuring not to cheat from browser.
 
