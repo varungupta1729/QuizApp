@@ -24,7 +24,7 @@ const Home = () => {
      </form>
      
       
-      
+      <p className='text-gray-700'>Made By Varun Gupta ❤️</p>
     </div>
   )
 }
