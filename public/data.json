@@ -1,0 +1,62 @@
+[
+  {
+      "id": 1,
+      "question": "Which of the following are lifecycle methods in React?",
+      "options": ["componentDidMount", "render", "componentWillUnmount", "getInitialState"],
+      "answer": ["componentDidMount", "componentWillUnmount", "render"]
+  },
+  {
+      "id": 2,
+      "question": "What is the correct syntax to create a state in a functional component?",
+      "options": ["useState()", "state = useState()", "this.state", "React.useState()"],
+      "answer": ["useState()"]
+  },
+  {
+      "id": 3,
+      "question": "Which hook is used to manage side effects in React?",
+      "options": ["useEffect", "useState", "useContext", "useReducer"],
+      "answer": ["useEffect"]
+  },
+  {
+      "id": 4,
+      "question": "Which of the following are valid ways to pass data to a component in React?",
+      "options": ["props", "context", "state", "hooks"],
+      "answer": ["props", "context"]
+  },
+  {
+      "id": 5,
+      "question": "How do you handle form submissions in React?",
+      "options": ["Using the onSubmit event", "Using the handleSubmit method", "Using the form tag", "Using the formSubmit handler"],
+      "answer": ["Using the onSubmit event", "Using the handleSubmit method"]
+  },
+  {
+      "id": 6,
+      "question": "What is the purpose of the useMemo hook?",
+      "options": ["To memoize values", "To optimize performance", "To handle form inputs", "To update state"],
+      "answer": ["To memoize values", "To optimize performance"]
+  },
+  {
+      "id": 7,
+      "question": "Which of the following are ways to create a React component?",
+      "options": ["Function component", "Class component", "Arrow function", "Functional component"],
+      "answer": ["Function component", "Class component", "Arrow function", "Functional component"]
+  },
+  {
+      "id": 8,
+      "question": "How do you conditionally render a component in React?",
+      "options": ["Using if statements", "Using the ternary operator", "Using React conditional rendering", "Using && operator"],
+      "answer": ["Using if statements", "Using the ternary operator", "Using && operator"]
+  },
+  {
+      "id": 9,
+      "question": "Which of the following are React state management libraries?",
+      "options": ["Redux", "MobX", "Context API", "React Router"],
+      "answer": ["Redux", "MobX", "Context API"]
+  },
+  {
+      "id": 10,
+      "question": "What are the advantages of using React hooks?",
+      "options": ["Simplifies component logic", "Encourages code reuse", "Improves performance", "Eliminates the need for classes"],
+      "answer": ["Simplifies component logic", "Encourages code reuse", "Eliminates the need for classes"]
+  }
+]
