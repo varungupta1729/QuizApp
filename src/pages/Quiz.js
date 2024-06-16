@@ -110,13 +110,13 @@ const Quiz = () => {
     
     if (fullscreenWarning) {
       return (
-        <div className="w-[500px] shadow-2xl bg-white rounded p-10 flex flex-col gap-5">
+        <div className="w-[500px] m-3 shadow-2xl bg-white rounded p-10 flex flex-col gap-5">
           <p className="flex gap-1  items-center">
             <CiWarning size={20} />
             Warning
           </p>
           <p>Please enable full screen to take the quiz.</p>
-          <div>
+          <div className="flex flex-wrap gap-2">
             <button
               className="px-3 py-2 w-[170px] bg-black text-white rounded"
               onClick={requestFullscreen}
@@ -190,7 +190,7 @@ const Quiz = () => {
   });
   console.log(selectedAnswer)
   return (
-    <div className="bg-white py-7 w-full md:w-[40%] px-10 flex flex-col gap-7 rounded-xl">
+    <div className="bg-white m-3 py-7 w-full sm:w-[40%] px-10 flex flex-col gap-7 rounded-xl">
     <span className="text-sm"><span className="text-4xl text-red-400">{question.id}</span>/{questions.length}</span>
       <span
         className={`${

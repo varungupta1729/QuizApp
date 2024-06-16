@@ -15,8 +15,9 @@ const Home = () => {
     }
    
   return (
-    <div className='w-full md:w-[400px] rounded  bg-white border p-10 flex flex-col gap-10 items-center justify-between'>
-     <p className='text-3xl'>Quiz App</p>
+    <div className='w-full m-3 sm:w-[400px] rounded  bg-white border p-10 flex flex-col gap-10 items-center justify-between'>
+    <img className='w-[180px] ' src='https://st2.depositphotos.com/4398873/7554/v/450/depositphotos_75545389-stock-illustration-quiz-multicolor-letters.jpg' alt='' />
+     {/* <p className='text-3xl'>Quiz App</p> */}
      <form className='gap-4 flex flex-col' onSubmit={handleStart}>
      <input className='w-full py-3  rounded px-7 border' type='text' placeholder='Enter Your Name'value={name}  onChange={(e)=>setName(e.target.value)} required />
      <button className='w-full rounded bg-black text-white py-3' >Start Quiz</button>
