@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+# Quiz App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Quiz App! This application is designed to test your knowledge with multiple choice questions in a timed environment. 
 
-## Available Scripts
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Full Screen Mode**: The quiz can only be taken in full screen mode. A popup will prompt you to enter full screen if not enabled.
+- **Persistent State**: If you refresh the page, the quiz will resume from where you left off.
+- **Timer**: You have 10 minutes to complete the quiz. The timer starts as soon as the quiz begins.
+- **Multiple Choice Questions**: Each question has multiple answers, and you need to select all correct answers.
+- **Copy Restriction**: Student cant copy the text ensuring not to cheat from browser.
+## Live Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Check out the live demo of the application [here](https://quiz-app-eta-ashy.vercel.app/).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+To get a local copy up and running, follow these steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+You need to have Node.js and npm installed. You can download them from [here](https://nodejs.org/).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ```bash
+    git clone https://github.com/your-username/quiz-app.git
+    cd quiz-app
+    ```
 
-### `npm run eject`
+2. Install dependencies:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    ```bash
+    npm install
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Start the development server:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    ```bash
+    npm start
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    The app will be available at `http://localhost:3000`.
 
-## Learn More
+## Usage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Full Screen Mode
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- The quiz can only be taken in full screen mode. If full screen is not enabled, a popup will prompt you to enable it.
+- To enter full screen, press `F11` or use the full screen option in your browser.
 
-### Code Splitting
+### Timer
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Once you start the quiz, a 10-minute timer will begin. The remaining time will be displayed at the top of the quiz.
+- If you refresh the page, the timer will continue from where it left off.
 
-### Analyzing the Bundle Size
+### Persistent State
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- If you refresh the page, the quiz will remember which question you were on and resume from there.
+- Your progress and the timer state are saved in the browser's local storage.
 
-### Making a Progressive Web App
+###Copy Restriction 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Student cant copy the text ensuring not to cheat from browser.
 
-### Advanced Configuration
+### Questions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- The quiz consists of 10 multiple choice questions.
+- Each question can have more than one correct answer. Select all correct answers to score points.
 
-### Deployment
+## Development
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Adding Questions
 
-### `npm run build` fails to minify
+- The questions are stored in a JSON file (`quiz.json`) in the `public` directory.
+- Each question has an `id`, `question` text, `options` (array of possible answers), and `answers` (array of correct answers).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Example of `quiz.json`:
+
+```json
+[
+    {
+        "id": 1,
+        "question": "Which of the following are JavaScript frameworks/libraries?",
+        "options": ["React", "Django", "Vue", "Flask"],
+        "answers": ["React", "Vue"]
+    },
+    ...
+]
