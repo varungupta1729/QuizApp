@@ -11,7 +11,7 @@ const Score = () => {
     <div className='font-bold text-2xl'>Successfully Completed Quiz!</div>
     <FaCheckCircle size={100} />
     
-     <div className={`text-lg font-semibold ${score < 60 ? "text-red-500" : "text-green-500 "}`}>Your Score is {score}</div>
+     <div className={`text-lg font-semibold ${score < 60 ? "text-red-500" : "text-green-500 "}`}>Your Score is {score} / 100</div>
    <Link to={'/'}><button className='bg-black text-white px-3 py-2 rounded flex gap-2 justify-center items-center'> <FaHome size={17} /> Go To Home</button></Link>
     </div>
   )
