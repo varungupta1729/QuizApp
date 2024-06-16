@@ -75,7 +75,7 @@ You need to have Node.js and npm installed. You can download them from [here](ht
 
 ### Adding Questions
 
-- The questions are stored in a JSON file (`quiz.json`) in the `public` directory.
+- The questions are stored in a JSON file (`data.json`) in the `public` directory.
 - Each question has an `id`, `question` text, `options` (array of possible answers), and `answers` (array of correct answers).
 
 Example of `quiz.json`:
