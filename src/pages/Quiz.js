@@ -203,7 +203,7 @@ const Quiz = () => {
         </h2>
         <ul className="flex flex-col gap-3">
           {question.options.map((option , i) => (
-            <li key={option} className={`${selectedAnswer.includes(option) ? " bg-black text-white " : " " } options px-7 border rounded-full py-3 hover:border-black hover:border-2`} onClick={()=>onAnswerSelection(option)}>
+            <li key={option} className={`${selectedAnswer.includes(option) ? " bg-black text-white " : " " } options px-7 border rounded-full py-3 hover:border-black hover:border-[-3px]`} onClick={()=>onAnswerSelection(option)}>
               {String.fromCharCode(64 + i + 1)}. {option}
             </li>
           ))}
