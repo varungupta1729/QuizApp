@@ -204,7 +204,7 @@ const Quiz = () => {
         <ul className="flex flex-col gap-3">
           {question.options.map((option , i) => (
             <li key={option} className={`${selectedAnswer.includes(option) ? " bg-black text-white " : " " } options px-7 border rounded-full py-3 hover:border-black hover:border-2`} onClick={()=>onAnswerSelection(option)}>
-              {i+1}.{option}
+              {String.fromCharCode(64 + i + 1)}. {option}
             </li>
           ))}
         </ul>
