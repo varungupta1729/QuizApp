@@ -8,7 +8,7 @@ const Score = () => {
   return (
     <div className='bg-white m-3 p-10 text-center text-black w-[400px] flex flex-col justify-center items-center gap-7'>
     <div className='text-2xl'>Hey! {name} 👋🏻</div>
-    <div className='font-bold text-2xl'>Successfully Completed Quiz</div>
+    <div className='font-bold text-2xl'>Successfully Completed Quiz!</div>
     <FaCheckCircle size={100} />
     
      <div className={`text-lg font-semibold ${score < 60 ? "text-red-500" : "text-green-500 "}`}>Your Score is {score}</div>
